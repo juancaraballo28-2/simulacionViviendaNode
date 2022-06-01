@@ -1,0 +1,31 @@
+{
+  "name": "simulacionviviendanode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "DEBUG=app:* nodemon index",
+    "start": "NODE_ENV=production node index",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongodb": "^4.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.5.0",
+    "nodemon": "^2.0.16",
+    "prettier": "^2.6.2"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+}
